@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*MIXIN*/
+
+@mixin anclas {
+    text-decoration: none;
+    text-shadow: $text_color_1 0.1em 0.1em 0.2em;
+    font-weight: bold;
+}
+
+body {
+    font-family: 'Montserrat',  sans-serif;
+    main {
+        
+        h1 {
+            text-shadow: 1px 1px 2px $text_color_1;
+            
+        }
+        h2{
+            @include anclas;
+        }
+    }
+}
+

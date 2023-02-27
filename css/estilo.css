@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2? family= Montserrat:wght@100 & display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*MIXIN*/
+body {
+  font-family: "Montserrat", sans-serif;
+}
+body main h1 {
+  text-shadow: 1px 1px 2px black;
+}
+body main h2 {
+  text-decoration: none;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  font-weight: bold;
+}
+
+header {
+  background-color: #EFF0EB;
+  border-bottom: 1px solid #a1a7ad;
+  background-repeat: no-repeat, repeat;
+  background-image: url("../img/totoro.png");
+  background-position: right 35% bottom 70%;
+  background-size: 10%;
+}
+@media screen and (max-width: 1200px) {
+  header {
+    background-image: none;
+  }
+}
+
+/*WHATSAPP*/
+.botonWhatsApp img {
+  width: 70px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+.zoom {
+  transition: transform 0.2s;
+  border-radius: 8px;
+}
+.zoom:hover {
+  transform: scale(1.5);
+}
+
+.cardHover:hover {
+  filter: saturate(180%);
+}
+
+button {
+  transition: all 0.5s ease;
+  color: white;
+  border: 3px solid rgba(66, 115, 161, 0.8470588235);
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1;
+  font-size: 17px;
+  background-color: rgba(65, 118, 167, 0.8470588235);
+  padding: 10px;
+  outline: none;
+  border-radius: 4px;
+}
+button:hover {
+  color: #001F3F;
+  background-color: #fff;
+}
+
+@media only screen and (max-width: 1300px) {
+  .ocultarLuffy {
+    display: none;
+  }
+}
+@media only screen and (max-width: 771px) {
+  .mapa-ubicacion {
+    text-align: center;
+  }
+  .dir-ubicacion {
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 770px) {
+  .mapa-ubicacion {
+    text-align: end;
+  }
+  .dir-ubicacion {
+    text-align: start;
+  }
+}
+
+/*# sourceMappingURL=estilo.css.map */

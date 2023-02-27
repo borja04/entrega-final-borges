@@ -1,0 +1,19 @@
+@mixin img-header-fondo {
+    background-repeat: no-repeat, repeat;
+    background-image: url("../img/totoro.png");
+    background-position: right 35% bottom 70%;
+    background-size: 10%;
+}
+
+
+header {
+    background-color: $background-color_2;
+    border-bottom: 1px solid $background-color_1 ;
+    @include img-header-fondo;
+
+
+    @media screen and (max-width: 1200px) {
+        background-image: none;
+    }
+
+}
